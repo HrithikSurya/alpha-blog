@@ -1,0 +1,60 @@
+    <h1>Articles Listing Page</h1>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @articles.each do |article| %>
+            <tr>
+                <td> <%= article.title %> </td>
+                <td> <%= article.description %> </td>
+                <td>PlaceHolder</td>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+
+
+      <!-- <table class="table">
+
+            <thead>
+
+                <th scope="col" >#</th>
+
+                <th scope="col" >Title</th>
+
+                <th scope="col" >Description</th>
+
+            </thead>
+
+        <tbody>
+
+            <% @articles.each do |h| %>
+
+                <tr>
+
+                    <td scope="row"><%=h.id%></td>
+
+                    <td><%=h.title%></td>
+
+                    <td><%=h.description%></td>
+
+                </tr>
+
+            <% end %>
+
+        </tbody>
+
+    </table>
+
+    
+
+     -->
+
+

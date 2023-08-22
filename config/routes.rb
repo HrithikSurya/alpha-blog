@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  root 'pages#home'
-  get 'about', to: 'pages#about'
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'pages#home'             #routing to HomePage
+  get 'about',to: 'pages#about' # this is thing doing problem
+
+  resources :articles       #this gonna generate all http methods like get put post patch
 end
